@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Got';
+  src: url('/fonts/GameOfThrones.ttf') format('truetype'),
+       url('/fonts/Game of Thrones.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-variant: normal;
+}
+
+@font-face {
+  font-family: 'Mon';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-variant: normal;
+}
+
+@theme {
+  --font-got: 'Got', sans-serif;
+  --font-mon: 'Mon', sans-serif;
+}
+
+.font-got {
+  font-family: 'Got', 'Arial Black', 'Arial', sans-serif !important;
+}
+
+.font-mon {
+  font-family: 'Mon', 'Montserrat', 'Arial', sans-serif !important;
+}
+
+@keyframes fire {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-fire {
+  background-size: 200% 200%;
+  animation: fire 2.5s infinite linear;
+  filter:
+    drop-shadow(0 0 10px rgba(255, 120, 0, 0.8))
+    drop-shadow(0 0 20px rgba(255, 180, 50, 0.5))
+    drop-shadow(0 0 35px rgba(255, 255, 150, 0.2));
+}
+
+@keyframes embers {
+  0% {
+    opacity: 0.2;
+    transform: translateY(0) scale(0.8);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateY(-8px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.6);
+  }
+}
+
+.animate-embers::before,
+.animate-embers::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: radial-gradient(circle, orange 0%, transparent 70%);
+  border-radius: 50%;
+  animation: embers 1s infinite ease-in-out;
+  transform: translateX(-50%);
+  filter: blur(0.3px);
+}
+
+.animate-embers::after {
+  animation-delay: 0.75s;
+  left: 55%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  }
+}
