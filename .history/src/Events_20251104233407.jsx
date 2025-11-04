@@ -369,7 +369,7 @@ const Events = () => {
             <h2 className="text-2xl font-semibold text-cyan-300 mb-3 tracking-widest">
               Want more info?
             </h2>
-            <p className="text-gray-300 text-sm mb-2">
+            <p className="text-gray-300 text-sm mb-6">
               Check out the{" "}
               <span className="text-cyan-400 font-medium">PRAGYATHA ‘25</span>{" "}
               Rule Book!
