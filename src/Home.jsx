@@ -281,7 +281,7 @@ const Home = () => {
           </h1>
 
           <p className="font-mon mt-4 uppercase text-xs sm:text-sm md:text-lg lg:text-xl tracking-widest text-gray-400 text-center">
-            Proclaim Your Potential
+            Potential
           </p>
 
           {/* ⏳ Countdown Timer */}
