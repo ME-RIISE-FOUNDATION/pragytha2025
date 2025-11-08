@@ -417,11 +417,12 @@ const Home = () => {
 
             <div className="text-center bg-white/5 border border-white/10 rounded-xl p-6 sm:p-10 font-mon">
               <h2 className="text-xl sm:text-2xl font-semibold tracking-wider uppercase mb-3">
-                Ready to Join Us?
+                READY TO CONQUER?
               </h2>
               <p className="text-gray-300 mb-5 text-sm sm:text-base max-w-2xl mx-auto">
-                Don't miss out on this incredible opportunity to showcase your talents
-                and connect with like-minded individuals.
+                The innovation calls for its next champions.
+Step beyond the ordinary, claim your place among the visionaries,
+and let your legacy echo through PRAGYATHA ’25.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
