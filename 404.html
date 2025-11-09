@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
     <title>Redirecting...</title>
-    <script>
-      // Redirect to home page automatically
-      window.location.replace("/");
+    <script type="text/javascript">
+      // GitHub Pages SPA redirect fix
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
     </script>
   </head>
-  <body style="background:#000; color:#fff; display:flex; align-items:center; justify-content:center; height:100vh; font-family:sans-serif;">
-    <h1>Redirecting to home...</h1>
+  <body>
   </body>
 </html>
