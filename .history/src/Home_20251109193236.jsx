@@ -82,6 +82,7 @@
 //             Proclaim Your Potential
 //           </p>
 
+        
 //         </main>
 //       </section>
 
@@ -186,6 +187,7 @@
 
 // export default Home;
 
+
 import React, { Suspense, useEffect, useState, useMemo } from "react";
 import Snowfall from "react-snowfall";
 import { Link } from "react-router-dom";
@@ -279,42 +281,43 @@ const Home = () => {
           </h1>
 
           <p className="font-mon mt-4 uppercase text-xs sm:text-sm md:text-lg lg:text-xl tracking-widest text-gray-400 text-center">
-            Potential
+            Proclaim Your Potential
           </p>
 
           {/* ⏳ Countdown Timer */}
-          <div className="mt-10 flex justify-center items-center px-4">
-            {/* Countdown Card */}
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 sm:p-8 shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/20 transition-all duration-500 w-full max-w-lg text-center flex flex-col items-center">
-              {/* Title */}
-              <p className="text-cyan-400 text-base sm:text-lg md:text-xl uppercase tracking-[0.25em] mb-8 font-semibold leading-relaxed">
-                The Throne
-                <br className="sm:hidden" /> Awaits the Chosen
-              </p>
+<div className="mt-10 flex justify-center items-center px-4">
+  {/* Countdown Card */}
+  <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 sm:p-8 shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/20 transition-all duration-500 w-full max-w-lg text-center flex flex-col items-center">
+    
+    {/* Title */}
+    <p className="text-cyan-400 text-base sm:text-lg md:text-xl uppercase tracking-[0.25em] mb-8 font-semibold leading-relaxed">
+      The Throne<br className="sm:hidden" /> Awaits the Chosen
+    </p>
 
-              {/* Timer */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 w-full">
-                {[
-                  { label: "Days", value: timeLeft.days },
-                  { label: "Hours", value: timeLeft.hours },
-                  { label: "Minutes", value: timeLeft.minutes },
-                  { label: "Seconds", value: timeLeft.seconds },
-                ].map((unit) => (
-                  <div
-                    key={unit.label}
-                    className="bg-white/5 border border-white/10 rounded-xl px-4 py-4 sm:px-5 sm:py-5 transition-all duration-300 hover:bg-white/10 flex flex-col items-center justify-center"
-                  >
-                    <div className="text-2xl sm:text-3xl font-bold text-cyan-400">
-                      {unit.value.toString().padStart(2, "0")}
-                    </div>
-                    <div className="text-gray-300 uppercase tracking-widest text-xs sm:text-sm mt-1">
-                      {unit.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+    {/* Timer */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 w-full">
+      {[
+        { label: "Days", value: timeLeft.days },
+        { label: "Hours", value: timeLeft.hours },
+        { label: "Minutes", value: timeLeft.minutes },
+        { label: "Seconds", value: timeLeft.seconds },
+      ].map((unit) => (
+        <div
+          key={unit.label}
+          className="bg-white/5 border border-white/10 rounded-xl px-4 py-4 sm:px-5 sm:py-5 transition-all duration-300 hover:bg-white/10 flex flex-col items-center justify-center"
+        >
+          <div className="text-2xl sm:text-3xl font-bold text-cyan-400">
+            {unit.value.toString().padStart(2, "0")}
           </div>
+          <div className="text-gray-300 uppercase tracking-widest text-xs sm:text-sm mt-1">
+            {unit.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
         </main>
       </section>
 
@@ -330,10 +333,7 @@ const Home = () => {
       </Suspense>
 
       {/* 📖 ABOUT SECTION */}
-      <section
-        id="about"
-        className="min-h-screen bg-black text-white py-16 sm:py-20"
-      >
+      <section id="about" className="min-h-screen bg-black text-white py-16 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-10">
           <header className="text-center mb-14 sm:mb-16">
             <h1
@@ -357,11 +357,10 @@ const Home = () => {
                   Welcome to Pragyatha '25
                 </h2>
                 <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                  Pragyatha ’25 isn’t just an event — it’s a movement
-                  celebrating innovation, entrepreneurship, and the creative
-                  power of young minds. Organized by the ME-RIISE Foundation and
-                  Malnad College of Engineering, Hassan, it unites innovators,
-                  entrepreneurs, and technologists from across the nation.
+                  Pragyatha ’25 isn’t just an event — it’s a movement celebrating
+                  innovation, entrepreneurship, and the creative power of young minds.
+                  Organized by the ME-RIISE Foundation and Malnad College of Engineering, Hassan,
+                  it unites innovators, entrepreneurs, and technologists from across the nation.
                 </p>
               </div>
 
@@ -421,9 +420,9 @@ const Home = () => {
                 READY TO CONQUER?
               </h2>
               <p className="text-gray-300 mb-5 text-sm sm:text-base max-w-2xl mx-auto">
-                The innovation calls for its next champions. Step beyond the
-                ordinary, claim your place among the visionaries, and let your
-                legacy echo through PRAGYATHA ’25.
+                The innovation calls for its next champions.
+Step beyond the ordinary, claim your place among the visionaries,
+and let your legacy echo through PRAGYATHA ’25.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
