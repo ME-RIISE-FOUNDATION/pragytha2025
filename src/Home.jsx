@@ -369,7 +369,7 @@ const Home = () => {
                   { value: "500+", label: "Participants" },
                   { value: "5+", label: "Events" },
                   { value: "3", label: "Days" },
-                  { value: "10+", label: "Colleges" },
+                  { value: "15+", label: "Colleges" },
                 ].map((item) => (
                   <div
                     key={item.label}
