@@ -15,7 +15,7 @@ const Events = () => {
   const events = [
     {
       id: 1,
-      title: "AdMania",
+      title: "AdVogue",
       category: "event",
       description:
         "A fusion of creativity and commerce! AdVogue challenges participants to craft original ad campaigns and business models for popular brands — blending storytelling, innovation, and strategy. Teams are judged on creativity, impact, and presentation.",
@@ -31,7 +31,7 @@ const Events = () => {
       title: "UI/UX Hackathon",
       category: "event",
       description: `A blend of learning and creation, this event begins with interactive sessions for beginners who want to explore UI/UX design using Figma. Following the sessions, a 24-hour design sprint challenges participants to conceptualize, design, and prototype digital solutions for real-world problems.`,
-      date: "November 29th - 30th",
+      date: "Day 1-2",
       time: "24 Hours",
       participants: "40 teams",
       difficulty: "Beginner – Advanced",
@@ -44,7 +44,7 @@ const Events = () => {
       category: "technical",
       description:
         "A beginner-focused workshop introducing blockchain fundamentals. Explore decentralization, digital ledgers, and secure data management. Gain hands-on exposure to how blockchain works and its industry applications.",
-      date: "November 29th - 30th",
+      date: "Day 2-3",
       time: "9:00 AM - 5:00 PM",
       participants: "60+",
       difficulty: "Beginner – Intermediate",
@@ -57,7 +57,7 @@ const Events = () => {
       category: "event",
       description:
         "From problem to prototype! Entrorphosis guides participants through the complete innovation journey — identifying real-world problems, brainstorming creative solutions, and developing tangible prototypes.",
-      date: "November 29th - 30th",
+      date: "Day 2-3",
       time: "9:00 AM - 4:00 PM",
       participants: "70+",
       difficulty: "All Levels",
@@ -70,7 +70,7 @@ const Events = () => {
       category: "creative",
       description:
         "A hands-on creative workshop exploring the fundamentals of digital design. Learn layout, color theory, typography, and visual storytelling using Figma and Adobe Photoshop.",
-      date: "November 29th - 30th",
+      date: "Day 2-3",
       time: "9:00 AM - 4:00 PM",
       participants: "60+",
       difficulty: "Beginner – Intermediate",
@@ -83,7 +83,7 @@ const Events = () => {
       category: "technical",
       description:
         "An interactive beginner-friendly workshop introducing cloud computing. Learn virtualization, scalability, and modern cloud-based architectures through guided, practical sessions.",
-      date: "November 29th - 30th",
+      date: "Day 2-3",
       time: "9:00 AM - 4:00 PM",
       participants: "60+",
       difficulty: "Beginner – Intermediate",

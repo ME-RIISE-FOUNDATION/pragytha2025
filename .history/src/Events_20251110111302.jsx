@@ -31,7 +31,7 @@ const Events = () => {
       title: "UI/UX Hackathon",
       category: "event",
       description: `A blend of learning and creation, this event begins with interactive sessions for beginners who want to explore UI/UX design using Figma. Following the sessions, a 24-hour design sprint challenges participants to conceptualize, design, and prototype digital solutions for real-world problems.`,
-      date: "November 29th - 30th",
+      date: "November 28th - 29th",
       time: "24 Hours",
       participants: "40 teams",
       difficulty: "Beginner – Advanced",
