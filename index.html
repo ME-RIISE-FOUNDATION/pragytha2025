@@ -1,30 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/pragyatha_logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pragyatha '25</title>
-    
-    <link rel="preload" href="/fonts/GameOfThrones.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/fonts/Montserrat-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+
+    <link
+      rel="preload"
+      href="/fonts/GameOfThrones.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Montserrat-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <script type="module" crossorigin src="/assets/index-nADXvx8r.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-DY4n2lE3.css">
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Redirect to homepage if the current page reloads to a missing route
+      // Works when Hostinger ignores .htaccess rules
+      if (!location.pathname.endsWith("/") && location.pathname !== "/") {
+        // Redirect to home page (change '/' if hosted in a subfolder)
+        window.history.replaceState({}, "", "/");
+        if (document.readyState === "complete") {
+          window.location.replace("/");
+        } else {
+          window.addEventListener("DOMContentLoaded", () => {
+            window.location.replace("/");
+          });
+        }
+      }
+    </script>
   </body>
-  <script type="text/javascript">
-  (function(l) {
-    if (l.search[1] === '/') {
-      var decoded = l.search.slice(1).split('&').map(function(s) { 
-        return s.replace(/~and~/g, '&'); 
-      }).join('?');
-      window.history.replaceState(null, null, 
-        l.pathname.slice(0, -1) + decoded + l.hash
-      );
-    }
-  }(window.location));
-</script>
-
 </html>
