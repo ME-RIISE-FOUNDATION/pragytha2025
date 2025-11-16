@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const ImageGallery = () => {
   const galleryImages = [
-    { id: 1, src: '/advogue.jpeg', alt: 'Advouge' },
+    { id: 1, src: '/advogue.jpg', alt: 'Advouge' },
     { id: 2, src: '/entrophosis.jpeg', alt: 'Entrorphosis' },
     { id: 3, src: '/uiux.jpeg', alt: 'UI/UX Hackaton' },
     { id: 4, src: '/design.jpeg', alt: 'Designing 101' },
