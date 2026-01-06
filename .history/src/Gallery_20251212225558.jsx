@@ -126,27 +126,42 @@ const Gallery = () => {
   const events = [
     {
       title: "AdMania",
-      images: ["/ad1.jpg", "/ad2.jpg", "/ad3.jpg", "/ad4.jpg", "/ad5.jpg"],
+      images: [],
     },
     {
-      title: "UI/UX Hackathon",
-      images: ["/ui1.jpg", "/ui2.jpg", "/ui3.jpg", "/ui4.jpg", "/ui5.jpg"],
+      title: "Coding Arena",
+      images: [
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Coding+1",
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Coding+2",
+      ],
     },
     {
-      title: "BlockCord",
-      images: ["/e1.jpg", "/e2.jpg", "/e3.jpg", "/e4.jpg", "/e5.jpg"],
+      title: "Robotic Marvels",
+      images: [
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Robotics+1",
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Robotics+2",
+      ],
     },
     {
-      title: "Entrorphosis",
-      images: ["/en1.jpg", "/en2.jpg", "/e3n.jpg", "/en4.jpg", "/en5.jpg"],
+      title: "Design Symposium",
+      images: [
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Design+1",
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Design+2",
+      ],
     },
     {
-      title: "Designing 101",
-      images: ["/d1.jpg", "/d2.jpg", "/d3.jpg", "/d4.jpg", "/d5.jpg"],
+      title: "Workshop Insights",
+      images: [
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Workshop+1",
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Workshop+2",
+      ],
     },
     {
-      title: "CloudLab",
-      images: ["/c1.jpg", "/c2.jpg", "/c3.jpg", "/c4.jpg", "/c5.jpg"],
+      title: "Hackathon Victory",
+      images: [
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Hackathon+1",
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Hackathon+2",
+      ],
     },
   ];
 

@@ -138,7 +138,7 @@ const Gallery = () => {
     },
     {
       title: "Entrorphosis",
-      images: ["/en1.jpg", "/en2.jpg", "/e3n.jpg", "/en4.jpg", "/en5.jpg"],
+      images: ["/e1.jpg", "/e2.jpg", "/e3.jpg", "/e4.jpg", "/e5.jpg"],
     },
     {
       title: "Designing 101",

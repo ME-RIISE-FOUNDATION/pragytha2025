@@ -9,7 +9,6 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Events", href: "/events" },
     { name: "Contact", href: "/contact" },
-    { name: "Gallery", href: "/gallery" },
   ];
 
   useEffect(() => {
@@ -74,10 +73,7 @@ const Navbar = () => {
           RULEBOOK
         </a>
 
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden focus:outline-none"
-        >
+        <button onClick={() => setOpen(!open)} className="md:hidden focus:outline-none">
           <svg
             className="w-7 h-7"
             fill="none"

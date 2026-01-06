@@ -133,20 +133,32 @@ const Gallery = () => {
       images: ["/ui1.jpg", "/ui2.jpg", "/ui3.jpg", "/ui4.jpg", "/ui5.jpg"],
     },
     {
+      title: "Robotic Marvels",
+      images: [
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Robotics+1",
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Robotics+2",
+      ],
+    },
+    {
       title: "BlockCord",
-      images: ["/e1.jpg", "/e2.jpg", "/e3.jpg", "/e4.jpg", "/e5.jpg"],
+      images: [
+        "/block1.jpg",
+        "/block2.jpg",
+        "/block3.jpg",
+        "/block4.jpg",
+        "/block5.jpg",
+      ],
     },
     {
       title: "Entrorphosis",
-      images: ["/en1.jpg", "/en2.jpg", "/e3n.jpg", "/en4.jpg", "/en5.jpg"],
+      images: ["/e1.jpg", "/e2.jpg", "/e3.jpg", "/e4.jpg", "/e5.jpg"],
     },
     {
-      title: "Designing 101",
-      images: ["/d1.jpg", "/d2.jpg", "/d3.jpg", "/d4.jpg", "/d5.jpg"],
-    },
-    {
-      title: "CloudLab",
-      images: ["/c1.jpg", "/c2.jpg", "/c3.jpg", "/c4.jpg", "/c5.jpg"],
+      title: "Hackathon Victory",
+      images: [
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Hackathon+1",
+        "https://placehold.co/1200x600/0f172a/00ffff?text=Hackathon+2",
+      ],
     },
   ];
 
